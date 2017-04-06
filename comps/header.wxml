@@ -1,0 +1,3 @@
+<template name="header">
+	<view data-c="{{$id}}" bindtap="onTap">{{title}}</view>
+</template>

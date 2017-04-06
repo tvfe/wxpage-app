@@ -1,0 +1,6 @@
+<import src="/comps/header.wxml" />
+
+<view class="wxpage">
+	<template is="header" data="{{...header}}"></template>
+	<view >It is play page</view>
+</view>

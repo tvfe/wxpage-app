@@ -1,0 +1,15 @@
+{
+  "pages": [
+      "pages/index",
+      "pages/channel",
+      "pages/play"
+  ],
+  "window": {
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "WXPage",
+      "navigationBarBackgroundColor": "#fff",
+      "backgroundColor": "#fff",
+      "backgroundTextStyle": "dark",
+      "enablePullDownRefresh": true
+  }
+}
