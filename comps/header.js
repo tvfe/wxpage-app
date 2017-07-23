@@ -14,6 +14,11 @@ module.exports = C('header', function (vm) {
 			setTimeout(function () {
 				vm.$set({'title': '√ Done'})
 			}, 1000)
+
+			vm.$on('play', function (playload) {
+				console.log(playload) // {cid: 123}
+			})
+
 		},
 		onTap: function (e) {
 			console.log(e)

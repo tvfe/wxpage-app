@@ -15,6 +15,7 @@ P('index', {
 		console.log('## [Page] APP Launch', opts)
 	},
 	onLoad: function() {
+		console.log('onAppLaunch => onLoad', new Date - getApp()._t)
 	},
 	onShow: function () {
 		console.log('## On index page show')
@@ -24,5 +25,6 @@ P('index', {
 	},
 	onPlay: function () {
 		this.$route('play?cid=123')
+		this.$emitter('play', {cid: 123})
 	}
 })
