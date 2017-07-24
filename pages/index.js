@@ -15,7 +15,7 @@ P('index', {
 		console.log('## On index page launch')
 	},
 	/**
-	 * 父组件声明周期方法
+	 * 父组件生命周期方法
 	 */
 	onAppLaunch: function (opts) {
 		console.log('## [Page] APP Launch', opts)
