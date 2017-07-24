@@ -34,6 +34,15 @@ module.exports = C('header', function (vm) {
 		 */
 		onTap: function (e) {
 			console.log(e)
+
+			/**
+			 * 子组件直接调用父组件方法，回传数据
+			 */
+			this.onTapHeader({cid: 123})
+			/**
+			 * 子组件向父组件派发消息
+			 */
+			vm.$emit('ontapheader', {cid: 123})
 		}
 	}
 })

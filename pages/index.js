@@ -22,6 +22,14 @@ P('index', {
 	},
 	onLoad: function() {
 		console.log('onAppLaunch => onLoad', new Date - getApp()._t)
+
+		/**
+		 * 监听来自子组件的消息
+		 */
+		this.$emitter.$on('ontapheader', function (payload) {
+			console.log(payload) //{cid: 123}
+		})
+
 	},
 	onShow: function () {
 		console.log('## On index page show')
@@ -37,5 +45,11 @@ P('index', {
 		this.$route('play?cid=123')
 		// 向子组件广播消息
 		this.$emitter.emit('play', {cid: 123})
+	},
+	/**
+	 * 可提供接口给子组件调用
+	 */
+	onTapHeader: function (payload) {
+		console.log(payload) // {cid: 123}
 	}
 })
