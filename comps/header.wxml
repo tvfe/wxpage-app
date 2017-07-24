@@ -1,3 +1,4 @@
 <template name="header">
+	<!-- 子组件事件绑定 -->
 	<view data-c="{{$id}}" bindtap="onTap">{{title}}</view>
 </template>

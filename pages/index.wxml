@@ -1,5 +1,8 @@
+<!-- 引入子组件模板 -->
 <import src="/comps/header.wxml" />
 <view class="wxpage">
+	<!-- 使用子组件并传递数据 -->
 	<template is="header" data="{{...header}}"></template>
+	<!-- 父组件绑定事件 -->
 	<button bindtap="onPlay">Go go play page($route)</button>
 </view>
