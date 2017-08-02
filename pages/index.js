@@ -26,7 +26,7 @@ P('index', {
 		/**
 		 * 监听来自子组件的消息
 		 */
-		this.$emitter.$on('ontapheader', function (payload) {
+		this.$emitter.on('ontapheader', function (payload) {
 			console.log(payload) //{cid: 123}
 		})
 
