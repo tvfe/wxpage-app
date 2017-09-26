@@ -7,7 +7,7 @@ module.exports = C('header', function (vm) {
 		data: {
 			title: 'header~'
 		},
-		onLaunch: function () {
+		onPageLaunch: function () {
 			vm.$set({
 				title: 'Launch...'
 			})
