@@ -21,7 +21,7 @@ P('index', {
 		console.log('## [Page] APP Launch', opts)
 	},
 	onLoad: function() {
-		console.log('onAppLaunch => onLoad', new Date - getApp()._t)
+		console.log('onAppLaunch => onLoad')
 
 		/**
 		 * 监听来自子组件的消息
